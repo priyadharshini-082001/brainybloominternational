@@ -1,0 +1,2378 @@
+/* ============================================================
+   TRAVEXA THEME - RESPONSIVE STYLESHEET
+   Author      : Akshar Webtech
+   Version     : 1.0.0
+
+   TABLE OF CONTENTS (STRICTLY GROUPED BY BREAKPOINT SIZE):
+   ------------------------------------------------------------
+   01. DESKTOP & LARGE DISPLAY         (min-width: 992px & 576px)
+   02. LARGE TABLET / LAPTOP           (max-width: 1199px)
+   03. TABLET & MEDIUM SCREENS         (max-width: 991px)
+   04. MOBILE / TABLET                 (max-width: 767px)
+   05. MOBILE PORTRAIT & SMALL DEVICE  (max-width: 575px)
+   06. EXTRA SMALL MOBILE              (max-width: 400px)
+   ============================================================ */
+
+/* ============================================================
+   01. DESKTOP & LARGE DISPLAY (MIN-WIDTH BREAKPOINTS)
+   ============================================================ */
+@media (min-width: 992px) {
+  .process-card-stagger {
+    margin-top: 60px !important;
+  }
+
+  .adv-features-wrapper,
+  .adv-cards-overlap-container {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .stat-card-stagger {
+    transform: translateY(30px);
+  }
+
+  .stat-card-stagger:hover {
+    transform: translateY(20px);
+  }
+}
+
+/* ============================================================
+   02. LARGE TABLET / LAPTOP (max-width: 1199px)
+   ============================================================ */
+@media (max-width: 1199px) {
+  .tb-insta-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .footer-contact-wrap {
+    justify-content: flex-start;
+  }
+}
+
+/* ============================================================
+   03. TABLET & MEDIUM SCREENS (max-width: 991px)
+   ============================================================ */
+@media (max-width: 991px) {
+
+  /* General Layout & Headers */
+  body {
+    width: 100%;
+  }
+
+  .tb-header-v2,
+  .tb-header-v2.is-sticky {
+    position: fixed !important;
+    top: 15px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+    z-index: 1090 !important;
+    background-color: none !important;
+  }
+
+  .tb-header-pill {
+    padding: 6px 14px !important;
+    border-radius: 50px !important;
+  }
+
+  .tb-header-actions-v2 .btn-primary {
+    display: none !important;
+  }
+
+  .main-header,
+  .main-header.is-sticky {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1080 !important;
+    background-color: var(--bg-white) !important;
+    box-shadow: 0 4px 20px rgba(0, 24, 83, 0.1) !important;
+  }
+
+  .top-header {
+    display: none !important;
+  }
+
+  /* Hero & Search Widget */
+  .hero-section {
+    padding: 130px 0 65px !important;
+    min-height: auto;
+  }
+
+  .main-header.header-glass {
+    top: 0 !important;
+    position: fixed !important;
+    background: rgba(255, 255, 255, 0.88) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+  }
+
+  /* Fullscreen Search Modal Mobile Tweaks */
+  .search-modal-close,
+  .search-modal .modal-header .btn-close {
+    top: 1.25rem !important;
+    right: 1.25rem !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 18px !important;
+  }
+
+  .search-modal .search-modal-input,
+  .form-control.search-modal-input {
+    font-size: 15px !important;
+    padding: 1rem 4.5rem 1rem 3.2rem !important;
+  }
+
+  .search-modal-submit-btn {
+    padding: 0.65rem 1rem !important;
+    font-size: 13px !important;
+  }
+
+  .search-modal-submit-btn span {
+    display: none;
+  }
+
+  .search-modal-submit-btn i {
+    margin-left: 0 !important;
+  }
+
+  .hero-section .hero-booking-bar {
+    border-radius: 28px !important;
+    padding: 1.25rem !important;
+  }
+
+  .hero-section .hero-booking-bar .booking-col:not(:last-child) {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+    padding-bottom: 0.85rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .hero-video-wrap {
+    height: 100%;
+  }
+
+  .hero-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tb-hero-v2 {
+    min-height: auto !important;
+    margin: 0 !important;
+    border-radius: 0 0 24px 24px !important;
+    padding-top: 90px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .tb-hero-float-icon,
+  .tb-hero-plane,
+  .tb-hero-glow {
+    display: none !important;
+  }
+
+  .tb-hero-title {
+    font-size: 34px !important;
+  }
+
+  .tb-hero-desc {
+    font-size: 15px !important;
+  }
+
+  .tb-booking-widget {
+    padding: 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .border-end-md {
+    border-right: none !important;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .hero-main-heading {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .hero-brush-highlight {
+    font-size: 54px;
+    margin: -6px 0;
+  }
+
+  .hero-script-tag {
+    font-size: 24px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .hero-floating-badge {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .hero-rating-badge,
+  .hero-destinations-badge {
+    padding: 0.6rem 1.15rem;
+  }
+
+  .hero-script-text {
+    font-size: 20px !important;
+  }
+
+  .hero-float-decor,
+  .hero-flight-trail-svg,
+  .hero-glow-orb {
+    display: none !important;
+  }
+
+  .hero-quick-tags {
+    margin-top: 1.25rem !important;
+  }
+
+  .hero-tag-chip {
+    font-size: 11.5px !important;
+    padding: 5px 12px !important;
+  }
+
+  .hero-booking-bar {
+    border-radius: 20px;
+  }
+
+  .travexa-dest-search-bar {
+    transform: translateY(-25px);
+    margin-bottom: -25px;
+    border-radius: 24px !important;
+    padding: 1.25rem !important;
+  }
+
+  .dest-bento-card.large {
+    min-height: 380px !important;
+  }
+
+  .destination-grid-section {
+    padding-top: 60px !important;
+  }
+
+  .tb-destination-hero {
+    padding: 150px 0 60px;
+    min-height: 300px;
+  }
+
+  .booking-col {
+    border-right: none !important;
+    border-bottom: 1px dashed var(--border-color);
+    padding: 0.65rem 0;
+  }
+
+  .booking-col:last-child {
+    border-bottom: none !important;
+  }
+
+  .btn-search-hero {
+    margin-top: 0.5rem;
+  }
+
+  /* Components & Cards */
+  .travexa-marquee-section {
+    padding: 50px 0 60px !important;
+  }
+
+  .marquee-main-title {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+    padding: 0 1rem;
+  }
+
+  .marquee-pill {
+    padding: 0.45rem 1rem 0.45rem 0.5rem !important;
+    font-size: 13px !important;
+    gap: 0.6rem !important;
+  }
+
+  .marquee-pill i {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 13px !important;
+  }
+
+  .marquee-pill-text {
+    font-size: 13px !important;
+  }
+
+  .marquee-pill-tag {
+    font-size: 9px !important;
+    padding: 0.15rem 0.5rem !important;
+  }
+
+  .travexa-expanding-gallery {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .expand-panel {
+    flex: none !important;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+  }
+
+  .panel-collapsed-title,
+  .expand-panel .panel-collapsed-title {
+    display: none !important;
+  }
+
+  .panel-category-badge,
+  .expand-panel .panel-category-badge {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    top: 15px !important;
+    left: 15px !important;
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+  }
+
+  .panel-top-badge,
+  .expand-panel .panel-top-badge {
+    left: auto !important;
+    right: 15px !important;
+    transform: none !important;
+    top: 15px !important;
+    font-size: 11.5px !important;
+    padding: 4px 10px !important;
+  }
+
+  .panel-overlay {
+    opacity: 0.95 !important;
+    background: linear-gradient(to top, rgba(0, 24, 83, 0.95) 0%, rgba(0, 24, 83, 0.4) 65%, transparent 100%) !important;
+  }
+
+  .panel-content,
+  .expand-panel .panel-content,
+  .expand-panel:not(.active) .panel-content {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    right: 20px !important;
+    width: calc(100% - 40px) !important;
+    height: auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    gap: 0.85rem !important;
+  }
+
+  .panel-icon {
+    margin: 0 !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 17px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .panel-text,
+  .expand-panel .panel-text,
+  .expand-panel:not(.active) .panel-text {
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    flex-grow: 1;
+  }
+
+  .panel-tags,
+  .expand-panel .panel-tags,
+  .expand-panel:not(.active) .panel-tags {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+
+  .panel-text h3 {
+    font-size: 20px !important;
+    margin-bottom: 0.15rem !important;
+  }
+
+  .panel-text p {
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .panel-text .btn {
+    height: 38px !important;
+    font-size: 12px !important;
+    padding: 0 1rem !important;
+    margin-top: 0.35rem !important;
+  }
+
+  .editorial-featured-card {
+    min-height: 500px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .editorial-title {
+    font-size: 22px !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .editorial-list-card {
+    height: auto;
+    border-radius: 18px;
+  }
+
+  .why-choose-us {
+    padding: 3.5rem 0 !important;
+  }
+
+  .advantage-card {
+    padding: 2rem 1.5rem !important;
+    border-radius: 20px !important;
+  }
+
+  .advantage-number {
+    font-size: 75px !important;
+  }
+
+  .travel-style-card {
+    height: 380px;
+    border-radius: 90px 90px 20px 20px;
+  }
+
+  .promo-immersive-wrapper {
+    min-height: auto !important;
+    border-radius: 20px !important;
+  }
+
+  .promo-gradient-overlay {
+    background: linear-gradient(180deg, rgba(0, 24, 83, 0.88) 0%, rgba(0, 24, 83, 0.94) 65%, rgba(0, 24, 83, 0.98) 100%) !important;
+  }
+
+  .testimonial-slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .blog-featured-card {
+    min-height: 420px;
+    border-radius: 20px !important;
+  }
+
+  .tb-about-experience-badge {
+    left: -10px;
+    top: 30px;
+  }
+
+  .tb-about-sub-img-wrap {
+    width: 60%;
+    height: 250px;
+    border-width: 8px;
+  }
+
+  .tb-about-sub-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tb-about-route-decor {
+    display: none;
+  }
+
+  .tb-about-main-img {
+    height: 450px;
+  }
+
+  .tb-explore-heading {
+    font-size: 42px !important;
+  }
+
+  .tb-discount-stamp-wrap {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+  }
+
+  .tb-stamp-val {
+    font-size: 20px;
+  }
+
+  .tb-why-triangle-wrapper {
+    max-width: 340px;
+    height: 285px;
+    margin: 1.5rem auto;
+  }
+
+  .tb-why-orbital-ring {
+    width: 320px !important;
+    height: 320px !important;
+  }
+
+  .tb-fbadge-top {
+    right: -5px !important;
+    top: 5px !important;
+  }
+
+  .tb-fbadge-bottom {
+    left: -5px !important;
+    bottom: 10px !important;
+  }
+
+  .tb-feature-box.tb-feature-left {
+    flex-direction: row-reverse;
+  }
+
+  .tb-feature-text.text-lg-end {
+    text-align: left !important;
+  }
+
+  .tb-curve-decor.justify-content-lg-end {
+    justify-content: flex-start !important;
+  }
+
+  .tb-feature-left .tb-feature-desc {
+    margin-left: 0;
+  }
+
+  .tb-doodle-signpost {
+    display: none !important;
+  }
+
+  .tb-promo-v2-img-wrap {
+    clip-path: none;
+    min-height: 350px;
+  }
+
+  .tb-promo-v2-badge {
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .tb-promo-v2-badge .num {
+    font-size: 26px;
+  }
+
+  .tb-promo-v2-badge .text {
+    font-size: 11px;
+  }
+
+  .tb-newsletter-glass {
+    flex-direction: column;
+    border-radius: 24px !important;
+    padding: 1rem !important;
+    gap: 1rem;
+  }
+
+  .tb-newsletter-input {
+    text-align: center;
+    padding: 0.5rem 0 !important;
+  }
+
+  .tb-newsletter-glass i.fa-envelope {
+    display: none;
+  }
+
+  .btn-accent {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .input-group {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+
+  .input-group>.form-control {
+    flex: 1 1 auto !important;
+    width: 1% !important;
+    min-width: 0 !important;
+  }
+
+  .input-group .btn,
+  .input-group .btn-accent {
+    width: auto !important;
+    flex-shrink: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .tb-footer-watermark {
+    bottom: 50px;
+  }
+
+  .tb-offset-card-wrapper {
+    height: 440px;
+  }
+
+  .our-mission-img {
+    height: 480px;
+  }
+
+  .mission-floating-badge {
+    right: 0;
+    margin-right: 0 !important;
+  }
+
+  /* Index-3 Adventure Homepage Overrides */
+  .adv-hero-section {
+    min-height: 680px;
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  .adv-hero-content {
+    padding-top: 2rem !important;
+    margin-top: 1rem !important;
+  }
+
+  .adv-hero-title {
+    font-size: clamp(36px, 6.5vw, 52px) !important;
+    letter-spacing: -1.5px;
+    margin-bottom: 1rem !important;
+  }
+
+  .adv-hero-desc {
+    font-size: 15px !important;
+    line-height: 1.5;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .adv-search-bar {
+    margin-top: -30px;
+    padding: 1.25rem;
+  }
+
+  .adv-search-item {
+    border-right: none;
+    border-bottom: 1px dashed var(--border-color);
+    padding: 0.75rem 0;
+  }
+
+  .adv-search-item:last-child {
+    border-bottom: none;
+  }
+
+  .adv-video-banner {
+    min-height: 360px;
+  }
+
+  /* Inner Pages & Specialized Elements */
+  .pricing-card-featured-modern {
+    transform: scale(1);
+    margin-top: 1.5rem;
+  }
+
+  .pricing-card-featured-modern:hover {
+    transform: translateY(-8px);
+  }
+
+  .review-card-stagger {
+    margin-top: 0;
+  }
+
+  .review-wall-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .review-quote-watermark {
+    font-size: 80px;
+    top: 0;
+    right: -10px;
+  }
+
+  .faq-support-card {
+    margin-bottom: 1rem;
+  }
+
+  .terms-sidebar {
+    position: relative !important;
+    top: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  .terms-content-box {
+    scroll-margin-top: 100px;
+  }
+
+  .account-sidebar {
+    margin-bottom: 1rem;
+  }
+
+  .account-nav-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .account-nav-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .account-nav-link {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    padding: 0.6rem 1.15rem !important;
+    border-radius: 50px !important;
+    font-size: 13.5px !important;
+    gap: 0.5rem !important;
+  }
+
+  .account-nav-link:hover,
+  .account-nav-link.active {
+    padding-left: 1.15rem !important;
+  }
+
+  .account-nav-menu .border-top {
+    display: none !important;
+  }
+
+  .auth-form-container {
+    max-width: 500px !important;
+  }
+
+  .coming-soon-section h1.display-3 {
+    font-size: 3rem !important;
+  }
+
+  .error-code {
+    font-size: 120px;
+  }
+
+  .blog-card-img-wrap {
+    height: 320px;
+  }
+
+  .sticky-sidebar-top {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 1rem;
+  }
+
+  .blog-detail-img-wrap {
+    height: 350px;
+  }
+
+  .p-xl-6 {
+    padding: 2.5rem !important;
+  }
+
+  .contact-map-wrapper {
+    min-height: 400px;
+  }
+
+  /* Index-2 Hero & Reservation Card Tablet Enhancements */
+  .tb-hero-v2 {
+    padding-top: 115px !important;
+    padding-bottom: 65px !important;
+    min-height: auto !important;
+  }
+
+  .tb-hero-title-v3 {
+    font-size: clamp(34px, 5vw, 48px) !important;
+    line-height: 1.15 !important;
+  }
+
+  .tb-hero-script-tag {
+    font-size: 28px !important;
+  }
+
+  .tb-hero-desc {
+    font-size: 16px !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .tb-reservation-card {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+    margin-left: 0 !important;
+    padding: 2.25rem 2rem !important;
+    border-radius: 24px !important;
+  }
+
+  .adv-main-header {
+    background: rgba(0, 24, 83, 0.85);
+    border-bottom: none;
+  }
+
+  .adv-hero-overlay {
+    background: linear-gradient(180deg, rgba(0, 24, 83, 0.9) 0%, rgba(0, 24, 83, 0.6) 60%, rgba(0, 24, 83, 0.2) 100%);
+  }
+
+  .adv-hero-section {
+    height: auto;
+    min-height: 800px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .adv-hero-line {
+    display: none;
+  }
+
+  .adv-hero-section .d-flex {
+    justify-content: center;
+  }
+
+  .adv-hero-desc {
+    margin: 0 auto 2.5rem auto !important;
+    padding-right: 0 !important;
+  }
+
+  .border-end-md {
+    border-right: none !important;
+  }
+
+  .adv-cat-card {
+    height: 320px;
+  }
+
+  .adv-bento-tall {
+    min-height: 400px;
+  }
+
+  .adv-cinematic-wrapper {
+    height: 500px;
+  }
+
+  /* Footer */
+  .footer-area.ft-bg {
+    background-size: 100% 100%, cover, auto, auto;
+  }
+
+  .footer-widget-wrap {
+    padding-top: 55px;
+    padding-bottom: 25px;
+  }
+
+  .footer-social-box {
+    margin-top: 25px !important;
+    margin-bottom: 20px;
+  }
+
+  .footer-contact {
+    margin-bottom: 25px;
+  }
+
+  .footer-contact-wrap {
+    gap: 12px;
+  }
+
+  /* Get In Touch Newsletter Widget Spacing */
+  .footer-widget-box:not(.list):not(.about-us),
+  .footer-contact + .row > .col-lg-4:last-child,
+  .footer-contact + .row > [class*="col-"]:last-child {
+    margin-top: 35px;
+  }
+}
+
+/* ============================================================
+   04. MOBILE / TABLET (max-width: 767px)
+   ============================================================ */
+@media (max-width: 767px) {
+  .travexa-marquee-section {
+    padding: 50px 0 60px !important;
+  }
+
+  .marquee-card {
+    padding: 6px 14px 6px 6px;
+    gap: 10px;
+  }
+
+  .card-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .travel-badge {
+    font-size: 9.5px;
+    padding: 3px 8px;
+  }
+
+  .marquee-main-title {
+    font-size: 12px !important;
+    letter-spacing: 1.2px !important;
+    line-height: 1.4 !important;
+    padding: 0 1rem;
+  }
+
+  .marquee-pill {
+    padding: 0.42rem 0.95rem 0.42rem 0.45rem !important;
+    font-size: 12.5px !important;
+    gap: 0.55rem !important;
+  }
+
+  .marquee-pill i {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+
+  .marquee-pill-text {
+    font-size: 12.5px !important;
+  }
+
+  .marquee-pill-tag {
+    font-size: 8.5px !important;
+    padding: 0.15rem 0.45rem !important;
+  }
+
+  .hero-main-heading {
+    font-size: 38px !important;
+    line-height: 1.15;
+  }
+
+  .hero-brush-highlight {
+    font-size: 48px !important;
+    margin: -2px 0;
+  }
+
+  .hero-script-tag {
+    font-size: 26px !important;
+  }
+
+  .hero-desc {
+    font-size: 15px !important;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-stacked-card h4 {
+    font-size: 14.5px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .tb-insta-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .tb-insta-item {
+    border-radius: 16px !important;
+  }
+
+  .tb-offset-card-wrapper {
+    height: auto;
+    min-height: 420px;
+  }
+
+  .tb-offset-hidden {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+  }
+
+  .tb-cinematic-glass {
+    background: linear-gradient(180deg, rgba(0, 24, 83, 0) 0%, rgba(0, 24, 83, 0.9) 30%, rgba(0, 24, 83, 1) 100%) !important;
+    padding-top: 3rem !important;
+  }
+
+  .tb-offset-frame {
+    display: none;
+  }
+
+  .tb-offset-card-wrapper:hover .tb-offset-card {
+    transform: none;
+  }
+
+  /* Footer */
+  .footer-contact-item {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+/* ============================================================
+   05. MOBILE PORTRAIT & SMALL DEVICE (max-width: 575px)
+   ============================================================ */
+@media (max-width: 575px) {
+  .travexa-marquee-section {
+    padding: 38px 0 45px !important;
+  }
+
+  .marquee-main-title {
+    font-size: 10.2px !important;
+    letter-spacing: 0.6px !important;
+    line-height: 1.4 !important;
+    padding: 0 10px !important;
+  }
+
+  .marquee-sub-badge {
+    font-size: 9.5px !important;
+    padding: 0.3rem 0.85rem !important;
+    letter-spacing: 1.6px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .marquee-container-wrap {
+    gap: 14px !important;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%) !important;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%) !important;
+  }
+
+  .marquee-track {
+    gap: 12px !important;
+  }
+
+  .marquee-pill {
+    padding: 0.35rem 0.75rem 0.35rem 0.35rem !important;
+    font-size: 11.5px !important;
+    gap: 0.45rem !important;
+  }
+
+  .marquee-pill i {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 11px !important;
+  }
+
+  .marquee-pill-text {
+    font-size: 11.5px !important;
+  }
+
+  .marquee-pill-tag {
+    font-size: 8px !important;
+    padding: 0.12rem 0.4rem !important;
+  }
+
+  .hero-main-heading {
+    font-size: clamp(24px, 7.2vw, 32px) !important;
+    line-height: 1.2;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .hero-brush-highlight {
+    font-size: clamp(30px, 9.5vw, 42px) !important;
+    margin: -2px 0;
+  }
+
+  .hero-script-tag {
+    font-size: 20px !important;
+  }
+
+  .hero-desc {
+    font-size: 14px !important;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+
+  .adv-hero-section {
+    min-height: 600px !important;
+    padding-top: 80px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .adv-hero-content {
+    padding-top: 1.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .adv-hero-subtitle {
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .adv-hero-title {
+    font-size: clamp(28px, 8.5vw, 36px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1px !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .adv-hero-desc {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1.25rem !important;
+    padding-right: 0 !important;
+  }
+
+  .adv-slide-btns {
+    gap: 0.65rem !important;
+  }
+
+  .adv-slide-btns .btn,
+  .adv-slide-btns .adv-glass-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    padding: 0.65rem 1.25rem !important;
+    height: 44px !important;
+  }
+
+  .adv-slider-nav {
+    margin: 1rem !important;
+  }
+
+  .adv-slider-nav button {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 15px !important;
+  }
+
+  /* Index-3 Search & Category Section Mobile Overrides */
+  .adv-search-wrapper {
+    margin-top: -35px !important;
+    border-radius: 28px !important;
+    padding: 0.85rem !important;
+  }
+
+  .adv-search-item {
+    border-end-style: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .adv-search-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .adv-cat-card {
+    height: 280px !important;
+  }
+
+  .adv-cat-icon {
+    width: 52px !important;
+    height: 52px !important;
+    font-size: 20px !important;
+  }
+
+  /* Index-3 Bento Grid Mobile Overrides */
+  .adv-bento-tall {
+    min-height: 380px !important;
+  }
+
+  .adv-bento-card {
+    padding: 1.5rem !important;
+  }
+
+  /* Index-3 Why Choose Us V2 Mobile Overrides */
+  .adv-cards-overlap-container {
+    margin-left: 0 !important;
+  }
+
+  /* Hero & Header Elements */
+  .avatar-group .avatar-img {
+    width: 32px !important;
+    height: 32px !important;
+    border-width: 1.5px !important;
+    margin-left: -8px !important;
+  }
+
+  .avatar-group .avatar-img:first-child {
+    margin-left: 0 !important;
+  }
+
+  .hero-shape-bottom img,
+  .footer-shape-top img {
+    height: 24px;
+    object-fit: cover !important;
+    object-position: center bottom !important;
+  }
+
+  .tb-explore-heading {
+    font-size: 34px !important;
+  }
+
+  .tb-discount-stamp-wrap {
+    width: 95px;
+    height: 95px;
+    min-width: 95px;
+  }
+
+  .tb-stamp-sub {
+    font-size: 9.5px;
+  }
+
+  .tb-stamp-val {
+    font-size: 17px;
+  }
+
+  .tb-stamp-foot {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+
+  .tb-package-item {
+    padding: 6px 2px !important;
+    gap: 8px !important;
+  }
+
+  .tb-item-check {
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px !important;
+    font-size: 10px !important;
+  }
+
+  .tb-item-title {
+    font-size: 13px !important;
+  }
+
+  .tb-about-img-frame {
+    display: none !important;
+  }
+
+  .tb-about-compass-watermark {
+    display: none !important;
+  }
+
+  .tb-about-sub-img-wrap {
+    width: 65% !important;
+    height: 190px !important;
+    border-width: 6px !important;
+  }
+
+  .tb-about-experience-badge {
+    left: -5px !important;
+    top: 20px !important;
+    padding: 9px 18px 9px 10px !important;
+    gap: 10px !important;
+  }
+
+  .tb-exp-icon-wrap {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 14px !important;
+  }
+
+  .tb-guide-floating-tag {
+    font-size: 9.5px !important;
+    padding: 4px 10px !important;
+    bottom: 8px !important;
+    left: 8px !important;
+  }
+
+  .tb-call-num {
+    font-size: 18px !important;
+  }
+
+  .tb-book-pill-btn {
+    padding: 0.75rem 1.85rem !important;
+    font-size: 14px !important;
+  }
+
+  /* Why Travel With Travexa (Mobile) */
+  .tb-why-triangle-wrapper {
+    max-width: 290px;
+    height: 245px;
+    margin: 1rem auto 1.5rem;
+  }
+
+  .tb-feature-box {
+    gap: 14px;
+  }
+
+  .tb-feature-icon-wrap {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    font-size: 18px !important;
+  }
+
+  .tb-feature-title {
+    font-size: 17px !important;
+  }
+
+  .tb-feature-desc {
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+  }
+
+  .tb-why-orbital-ring {
+    display: none !important;
+  }
+
+  .tb-feature-card {
+    padding: 14px 16px !important;
+  }
+
+  .tb-doodle-palm,
+  .tb-doodle-umbrella,
+  .tb-doodle-signpost {
+    display: none !important;
+  }
+
+  .tb-destination-hero {
+    padding: 150px 0 50px;
+    min-height: 280px;
+  }
+
+  .tb-dest-header-card {
+    padding: 1.5rem 0.85rem !important;
+    border-radius: 18px !important;
+  }
+
+  .tb-dest-header-card h1 {
+    font-size: 26px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .tb-dest-header-card p {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .tb-flight-breadcrumb {
+    padding: 0.4rem 0.65rem !important;
+    gap: 0.35rem !important;
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    border-radius: 24px !important;
+  }
+
+  .tb-bc-item {
+    gap: 0.25rem !important;
+    white-space: nowrap !important;
+  }
+
+  .tb-bc-icon {
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 9.5px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .tb-bc-item span {
+    font-size: 11.5px !important;
+    white-space: nowrap !important;
+  }
+
+  .tb-bc-divider {
+    width: 18px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .tb-bc-plane {
+    font-size: 10px !important;
+  }
+
+  .travexa-dest-search-bar,
+  .booking-stepper {
+    transform: translateY(-15px);
+    margin-top: -30px !important;
+    margin-bottom: -15px;
+    padding: 0.85rem !important;
+    border-radius: 18px !important;
+  }
+
+  .dest-filter-container {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    padding: 0.25rem 0.25rem 0.75rem !important;
+    gap: 0.5rem !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .dest-filter-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dest-filter-btn {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    font-size: 12px !important;
+    padding: 0.45rem 1rem !important;
+  }
+
+  .dest-info-item {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 0.35rem !important;
+  }
+
+  .dest-info-icon {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 16px !important;
+  }
+
+  .dest-info-label {
+    font-size: 11px !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .dest-info-val {
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+    white-space: nowrap !important;
+  }
+
+  .dest-main-img-box {
+    height: 240px !important;
+    border-radius: 18px !important;
+  }
+
+  .dest-gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .dest-gallery-item {
+    height: 110px !important;
+    border-radius: 14px !important;
+  }
+
+  .dest-details-section {
+    padding: 45px 0 !important;
+  }
+
+  .dest-sidebar-card {
+    padding: 1.25rem !important;
+    border-radius: 18px !important;
+  }
+
+  /* Tour Cards & Package Grid */
+  .tour-listing-section {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+
+  .tour-card-img-wrap {
+    height: 185px !important;
+  }
+
+  .tour-card-body {
+    padding: 1.15rem 0.85rem !important;
+  }
+
+  .tour-card-body h3 {
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+  }
+
+  .tour-card-body p {
+    font-size: 12px !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .tour-inclusions-list {
+    flex-wrap: wrap !important;
+    gap: 0.4rem 0.6rem !important;
+    margin: 0.75rem 0 !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  .tour-inclusion-item {
+    font-size: 11px !important;
+  }
+
+  .tour-card-body .btn-primary {
+    padding: 0.45rem 1rem !important;
+    font-size: 12px !important;
+    height: auto !important;
+    white-space: nowrap !important;
+  }
+
+  .tb-hero-v2 {
+    margin: 8px 8px !important;
+    border-radius: 16px !important;
+  }
+
+  .offcanvas-mobile {
+    width: 100% !important;
+  }
+
+  .hero-main-heading {
+    font-size: 32px !important;
+    line-height: 1.15;
+  }
+
+  .hero-brush-highlight {
+    font-size: 42px !important;
+  }
+
+  .hero-script-tag {
+    font-size: 22px !important;
+  }
+
+  .hero-booking-bar {
+    border-radius: 16px;
+  }
+
+  .hero-rating-badge,
+  .hero-destinations-badge {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Datepicker & Dropdowns */
+  .travexa-datepicker-pop,
+  .tb-reservation-field .travexa-datepicker-pop,
+  .dest-sidebar-card .travexa-datepicker-pop,
+  .position-relative .travexa-datepicker-pop {
+    width: 270px !important;
+    max-width: calc(100vw - 24px) !important;
+    min-width: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    padding: 0.85rem 0.65rem !important;
+    border-radius: 16px !important;
+    box-shadow: 0 15px 40px rgba(0, 24, 83, 0.25) !important;
+    z-index: 100000 !important;
+  }
+
+  .col-6:last-child .travexa-datepicker-pop,
+  .col-md-6:last-child .travexa-datepicker-pop,
+  .travexa-datepicker-pop.pop-right {
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  .dest-sidebar-card .travexa-date-picker {
+    font-size: 11.5px !important;
+    padding-left: 6px !important;
+    padding-right: 22px !important;
+  }
+
+  .datepicker-header {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .datepicker-header .current-month-year {
+    font-size: 14px !important;
+  }
+
+  .datepicker-day-name,
+  .datepicker-day {
+    font-size: 11px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+
+  .datepicker-footer {
+    padding-top: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .datepicker-btn-clear,
+  .datepicker-btn-today {
+    font-size: 11px !important;
+  }
+
+  .travexa-custom-select {
+    position: relative !important;
+    width: 100% !important;
+    z-index: 1 !important;
+  }
+
+  .travexa-custom-select.is-open {
+    z-index: 999999 !important;
+  }
+
+  .select-options,
+  .tb-reservation-field .select-options {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    box-shadow: 0 15px 40px rgba(0, 24, 83, 0.2) !important;
+  }
+
+  .select-option,
+  .tb-reservation-field .select-option {
+    padding: 0.55rem 1rem !important;
+    font-size: 13px !important;
+  }
+
+  .tb-package-card-v2 .card-body {
+    padding: 1.15rem 0.85rem !important;
+  }
+
+  .tb-meta-pill-row {
+    padding: 8px 8px !important;
+    gap: 4px !important;
+  }
+
+  .tb-meta-pill-row span {
+    font-size: 11.5px !important;
+    white-space: nowrap !important;
+  }
+
+  .tb-meta-pill-row .text-muted {
+    font-size: 9px !important;
+  }
+
+  .tb-package-card-v2 .btn {
+    white-space: nowrap !important;
+    padding: 0.5rem 0.95rem !important;
+    font-size: 13px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .tb-testi-v2-card {
+    padding: 1.25rem 1rem !important;
+    border-radius: 20px !important;
+  }
+
+  .tb-testi-v2-user {
+    flex-wrap: wrap !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .tb-testi-v2-avatar {
+    width: 48px !important;
+    height: 48px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .tb-testi-v2-user .ms-auto {
+    margin-left: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    gap: 2px !important;
+  }
+
+  .tb-testi-v2-quote-icon {
+    font-size: 45px !important;
+    top: 15px !important;
+    right: 15px !important;
+  }
+
+  .tb-testi-v2-text {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+  }
+
+  .scroll-to-top {
+    bottom: 20px !important;
+    right: 15px !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 14px !important;
+    z-index: 99 !important;
+  }
+
+  /* Floating Exploration Icons Mobile */
+  .blog-float-icon,
+  .hero-float-decor,
+  .dest-float-icon,
+  .tour-float-icon,
+  .tb-pkg-float,
+  .travel-styles-float {
+    display: none !important;
+  }
+
+  .blog-featured-card {
+    min-height: 420px !important;
+    border-radius: 20px !important;
+  }
+
+  .blog-featured-title {
+    font-size: 20px !important;
+  }
+
+  .blog-stacked-card {
+    padding: 1rem !important;
+    border-radius: 16px !important;
+    gap: 0.85rem !important;
+  }
+
+  .stacked-img-wrap {
+    width: 110px !important;
+    height: 95px !important;
+    border-radius: 12px !important;
+  }
+
+  .stacked-arrow-btn {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 11px !important;
+  }
+
+  .editorial-featured-card {
+    min-height: 460px;
+    border-radius: 20px !important;
+  }
+
+  .editorial-featured-card .btn {
+    white-space: nowrap !important;
+    padding: 0.5rem 1.1rem !important;
+    font-size: 13px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .featured-location-tag {
+    font-size: 11.5px !important;
+    color: #00d2df !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  .editorial-title {
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .featured-pill-badge {
+    padding: 0.3rem 0.65rem !important;
+    font-size: 11.5px !important;
+  }
+
+  .editorial-list-card {
+    padding: 0.85rem 0.65rem !important;
+    border-radius: 18px !important;
+  }
+
+  .editorial-list-card h4 {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .editorial-location-tag {
+    font-size: 11px !important;
+  }
+
+  .rating-badge-pill {
+    font-size: 11px !important;
+    padding: 0.15rem 0.45rem !important;
+  }
+
+  .btn-explore-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    padding: 0.35rem 0.75rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .list-img-box {
+    border-radius: 12px !important;
+  }
+
+  .promo-immersive-wrapper {
+    min-height: auto !important;
+    border-radius: 24px !important;
+  }
+
+  .promo-main-heading {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  .promo-immersive-wrapper p {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .promo-pill-badge {
+    white-space: nowrap !important;
+    padding: 0.4rem 1rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .promo-timer-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-bottom: 1.5rem !important;
+    width: 100% !important;
+  }
+
+  .timer-colon {
+    display: none !important;
+  }
+
+  .promo-timer-box {
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    padding: 0.55rem 0.25rem !important;
+    border-radius: 16px !important;
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 64px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .timer-num {
+    font-size: 21px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    margin-bottom: 5px !important;
+    color: #FFFFFF !important;
+    display: block !important;
+  }
+
+  .timer-label {
+    font-size: 9.5px !important;
+    font-weight: 700 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1 !important;
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .promo-immersive-wrapper .btn {
+    white-space: nowrap !important;
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 50px !important;
+  }
+
+  .tb-promo-v2-card h2 {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .tb-promo-v2-card .btn {
+    white-space: nowrap !important;
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .tb-timer-v2-wrap {
+    display: flex !important;
+    gap: 8px !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .tb-timer-circle {
+    width: 64px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    flex: 0 0 calc(25% - 6px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+  }
+
+  .tb-timer-circle .num {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    margin-bottom: 4px !important;
+    display: block !important;
+  }
+
+  .tb-timer-circle .label {
+    font-size: 9px !important;
+    line-height: 1 !important;
+  }
+
+  /* Inner Pages Media Overrides */
+  .pricing-card-modern,
+  .pricing-card-featured-modern {
+    padding: 2.5rem 1.5rem 1.5rem !important;
+  }
+
+  .pricing-badge-floating {
+    top: -14px;
+    padding: 6px 18px;
+    font-size: 10px;
+  }
+
+  .review-user-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-wall-card h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .custom-faq-accordion .faq-btn {
+    padding: 1.15rem 1.25rem !important;
+    font-size: 16px !important;
+  }
+
+  .custom-faq-accordion .accordion-body {
+    padding: 1.15rem 1.25rem !important;
+    font-size: 14px !important;
+  }
+
+  .terms-content-container {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .terms-sidebar {
+    padding: 1.5rem !important;
+  }
+
+  .account-stat-card {
+    padding: 1.5rem !important;
+  }
+
+  .booking-history-item {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .booking-img-wrap {
+    width: 100%;
+    height: 160px;
+  }
+
+  .booking-history-item .text-sm-end {
+    width: 100%;
+  }
+
+  .booking-history-item .btn {
+    width: 100%;
+  }
+
+  .auth-card-wrapper {
+    border-radius: 20px !important;
+  }
+
+  .auth-form-container {
+    padding: 0 !important;
+  }
+
+  .auth-social-btn span {
+    display: none;
+  }
+
+  .auth-social-btn {
+    padding: 0.75rem !important;
+  }
+
+  .contact-action-pill {
+    padding: 0.75rem 0.85rem !important;
+    font-size: 13px !important;
+    border-radius: 14px !important;
+  }
+
+  .cs-timer-box {
+    min-width: 58px !important;
+    max-width: 68px !important;
+    padding: 0.85rem 0.35rem !important;
+    border-radius: 14px !important;
+    flex: 1 1 0 !important;
+  }
+
+  .cs-num {
+    font-size: 22px !important;
+  }
+
+  .cs-label {
+    font-size: 8.5px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .cs-newsletter .cs-notify-btn {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .cs-newsletter .form-control {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    text-align: center;
+  }
+
+  .error-card {
+    padding: 2.5rem 1.5rem !important;
+  }
+
+  .error-code {
+    font-size: 90px;
+    letter-spacing: -2px;
+  }
+
+  .error-floating-icon {
+    display: none;
+  }
+
+  .error-card .w-sm-auto {
+    width: 100% !important;
+  }
+
+  .blog-card-img-wrap {
+    height: 240px;
+  }
+
+  .blog-standard-card .p-md-5 {
+    padding: 1.5rem !important;
+  }
+
+  .blog-standard-card h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .sidebar-widget {
+    padding: 1.5rem !important;
+  }
+
+  .blog-detail-img-wrap {
+    height: 260px;
+  }
+
+  .blog-detail-section h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .blog-blockquote {
+    padding: 1.5rem !important;
+  }
+
+  .blog-blockquote p {
+    font-size: 1rem !important;
+  }
+
+  .comment-reply {
+    margin-left: 1.5rem !important;
+  }
+
+  .comment-reply::before {
+    left: -12px;
+    width: 10px;
+  }
+
+  .author-bio-box {
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-overlap-row {
+    margin-top: -60px;
+  }
+
+  .contact-main-section {
+    margin-top: -20px;
+    padding-top: 60px !important;
+  }
+
+  .contact-info-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .contact-map-wrapper {
+    min-height: 300px;
+  }
+
+  .contact-breadcrumb {
+    flex-wrap: wrap;
+  }
+
+  .adv-slider-nav {
+    display: none !important;
+  }
+
+  .adv-hero-section {
+    min-height: 700px;
+  }
+
+  .adv-bento-tall {
+    min-height: 350px;
+    padding: 2rem 1.5rem !important;
+  }
+
+  .adv-bento-card.bg-glass {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .adv-bento-section h2 {
+    font-size: 2.2rem !important;
+  }
+
+  .adv-bento-section .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .adv-cinematic-wrapper {
+    height: 400px;
+  }
+
+  .adv-play-btn-v2 {
+    width: 65px;
+    height: 65px;
+  }
+
+  .adv-why-choose-us-v2 h2 {
+    font-size: 2.2rem !important;
+  }
+
+  .adv-overlap-card {
+    padding: 1.5rem 1.25rem !important;
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+
+  .adv-dest-card-v3 {
+    height: 420px;
+  }
+
+  .adv-dest-prev-v3,
+  .adv-dest-next-v3 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .blog-stacked-card {
+    padding: 0.75rem !important;
+    gap: 0.75rem !important;
+  }
+
+  .stacked-img-wrap {
+    width: 95px !important;
+    height: 95px !important;
+    border-radius: 12px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .stacked-content {
+    padding-top: 0.15rem !important;
+    padding-right: 0 !important;
+  }
+
+  .stacked-content .blog-cat-tag {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .stacked-content h4 {
+    font-size: 0.875rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.35rem !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .tb-contact-widget {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .tb-contact-icon-v3 {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 16px !important;
+  }
+
+  .tb-contact-widget a[href^="tel:"] {
+    font-size: 1rem !important;
+    white-space: nowrap !important;
+  }
+
+  .tb-contact-widget a[href^="mailto:"] {
+    font-size: 0.875rem !important;
+  }
+
+  .dest-quick-info-bar {
+    padding: 1.25rem 1rem !important;
+    border-radius: 20px !important;
+  }
+
+  .dest-info-item {
+    gap: 0.65rem !important;
+  }
+
+  .dest-info-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 18px !important;
+  }
+
+  .dest-info-label {
+    font-size: 11.5px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 700 !important;
+  }
+
+  .dest-info-val {
+    font-size: 14.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-booking-bar {
+    padding: 1.25rem 1rem !important;
+    overflow: visible !important;
+  }
+
+  .hero-booking-bar .select-options {
+    right: 0 !important;
+    left: auto !important;
+    width: auto !important;
+    min-width: 230px !important;
+    max-width: 270px !important;
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    box-shadow: 0 20px 50px rgba(0, 24, 83, 0.35) !important;
+    border-radius: 16px !important;
+    z-index: 999999 !important;
+  }
+
+  .hero-booking-bar .select-option {
+    padding: 0.6rem 1rem !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Tour Packages Mobile Cards */
+  .ref-tour-card {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .ref-tour-img-wrap {
+    width: 100%;
+    height: 200px;
+  }
+
+  .ref-tour-content {
+    padding: 0;
+  }
+
+  .ref-tour-bottom {
+    width: 100%;
+  }
+
+  /* Footer Mobile */
+  .footer-area.ft-bg {
+    background-size: 100% 100%, 750px auto, auto, auto;
+    background-position: center top, bottom right, center center, center center;
+  }
+
+  .footer-widget-box.about-us p {
+    max-width: 100%;
+  }
+
+  .newsletter-form .form-icon {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .stacked-img-wrap {
+    width: 85px !important;
+    height: 85px !important;
+  }
+
+  .blog-stacked-card {
+    padding: 0.65rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .tb-contact-widget {
+    padding: 1rem 0.85rem !important;
+  }
+
+  .tb-contact-widget a[href^="tel:"] {
+    font-size: 0.925rem !important;
+  }
+
+  .tb-contact-widget a[href^="mailto:"] {
+    font-size: 0.825rem !important;
+  }
+
+  .dest-quick-info-bar {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .dest-info-item {
+    gap: 0.5rem !important;
+  }
+
+  .dest-info-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 18px !important;
+  }
+
+  .dest-info-label {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+  }
+
+  .dest-info-val {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+  }
+
+  .cs-timer-box {
+    min-width: 52px !important;
+    max-width: 62px !important;
+    padding: 0.75rem 0.25rem !important;
+    border-radius: 12px !important;
+  }
+
+  .cs-num {
+    font-size: 20px !important;
+  }
+
+  .cs-label {
+    font-size: 8px !important;
+    letter-spacing: 0.3px !important;
+  }
+}

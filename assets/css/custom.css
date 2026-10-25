@@ -1,0 +1,886 @@
+
+/* BRAINYSCHOOL VISION & MISSION */
+
+.brainyschool-growth {
+    padding: 35px 20px;
+    background: #640909;
+    color: #fff;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    overflow: hidden;
+}
+
+.brainyschool-growth,
+.brainyschool-growth * {
+    box-sizing: border-box;
+}
+
+.brainyschool-growth-wrap {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.brainyschool-growth-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 35px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 22px;
+}
+
+/* VISION & MISSION */
+
+.brainyschool-growth-vision,
+.brainyschool-growth-mission {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.045);
+    transition: border-color 0.3s ease,
+                background 0.3s ease;
+}
+
+.brainyschool-growth-vision:hover,
+.brainyschool-growth-mission:hover {
+    border-color: #f0c66e;
+    background: rgba(255, 255, 255, 0.075);
+}
+
+.brainyschool-growth-index {
+    margin-bottom: 13px;
+    color: #f0c66e;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.brainyschool-growth-vision h3,
+.brainyschool-growth-mission h3 {
+    margin: 0 0 13px;
+    color: #fff;
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: 650;
+}
+
+.brainyschool-growth-vision h3 em,
+.brainyschool-growth-mission h3 em {
+    color: #f0c66e;
+    font-style: normal;
+}
+
+.brainyschool-growth-vision p,
+.brainyschool-growth-mission p {
+    margin: 0 0 18px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.75;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* IMAGES */
+
+.brainyschool-growth-image {
+    position: relative;
+    width: 100%;
+    height: 205px;
+    margin-top: auto;
+    overflow: hidden;
+    border-radius: 7px;
+    background: #4d1717;
+}
+
+.brainyschool-growth-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.brainyschool-growth-image:hover img {
+    transform: scale(1.04);
+}
+
+.brainyschool-growth-image-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 22px 12px 11px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    background: linear-gradient(
+        to top,
+        rgba(35, 5, 5, 0.88),
+        transparent
+    );
+}
+
+/* CENTRAL GROWTH DECORATION */
+
+.brainyschool-growth-path {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brainyschool-growth-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #f0c66e;
+    font-size: 24px;
+}
+
+.brainyschool-growth-symbol.growth-leaf {
+    font-size: 32px;
+}
+
+.brainyschool-growth-path-line {
+    width: 2px;
+    min-height: 40px;
+    flex: 1;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #f0c66e,
+        transparent
+    );
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .brainyschool-growth {
+        padding: 28px 16px;
+    }
+
+    .brainyschool-growth-layout {
+        grid-template-columns: minmax(0, 1fr) 25px minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .brainyschool-growth-vision,
+    .brainyschool-growth-mission {
+        padding: 17px;
+    }
+
+    .brainyschool-growth-vision h3,
+    .brainyschool-growth-mission h3 {
+        font-size: 23px;
+    }
+
+    .brainyschool-growth-vision p,
+    .brainyschool-growth-mission p {
+        font-size: 16px;
+    }
+
+    .brainyschool-growth-image {
+        height: 175px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+    .brainyschool-growth {
+        padding: 22px 14px;
+    }
+
+    .brainyschool-growth-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .brainyschool-growth-vision,
+    .brainyschool-growth-mission {
+        padding: 19px 16px;
+    }
+
+    .brainyschool-growth-index {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .brainyschool-growth-vision h3,
+    .brainyschool-growth-mission h3 {
+        font-size: 24px;
+        margin-bottom: 11px;
+    }
+
+    .brainyschool-growth-vision p,
+    .brainyschool-growth-mission p {
+        font-size: 17px;
+        line-height: 1.75;
+        margin-bottom: 15px;
+    }
+
+    .brainyschool-growth-image {
+        height: 200px;
+    }
+
+    /* Horizontal divider on mobile */
+
+    .brainyschool-growth-path {
+        flex-direction: row;
+        gap: 10px;
+        height: 28px;
+    }
+
+    .brainyschool-growth-symbol {
+        width: 25px;
+        height: 25px;
+        font-size: 21px;
+    }
+
+    .brainyschool-growth-symbol.growth-leaf {
+        font-size: 28px;
+    }
+
+    .brainyschool-growth-path-line {
+        width: 45px;
+        min-width: 25px;
+        min-height: 0;
+        height: 2px;
+        flex: 0 1 45px;
+        background: linear-gradient(
+            to right,
+            transparent,
+            #f0c66e,
+            transparent
+        );
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+    .brainyschool-growth {
+        padding: 18px 11px;
+    }
+
+    .brainyschool-growth-vision,
+    .brainyschool-growth-mission {
+        padding: 16px 13px;
+    }
+
+    .brainyschool-growth-vision h3,
+    .brainyschool-growth-mission h3 {
+        font-size: 22px;
+    }
+
+    .brainyschool-growth-image {
+        height: 175px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .brainyschool-growth-image img,
+    .brainyschool-growth-vision,
+    .brainyschool-growth-mission {
+        transition: none;
+    }
+
+    .brainyschool-growth-image:hover img {
+        transform: none;
+    }
+}
+
+/* ==========================================
+   BRAINYSCHOOL PROGRAMMES CAROUSEL
+========================================== */
+
+.tb-packages-v2 .tb-programmes-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 auto 25px;
+    position: relative;
+    z-index: 5;
+}
+
+.tb-packages-v2 .tb-programmes-counter {
+    color: #243b2b;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tb-packages-v2 .tb-programmes-arrow {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #245331;
+    border-radius: 50%;
+    background: #245331;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .25s ease,
+                color .25s ease,
+                transform .25s ease;
+}
+
+.tb-packages-v2 .tb-programmes-arrow:hover {
+    background: #b58a5a;
+    border-color: #b58a5a;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+.tb-packages-v2 .tb-programmes-arrow:focus-visible {
+    outline: 3px solid #b58a5a;
+    outline-offset: 3px;
+}
+
+/* Horizontal scrolling track */
+.tb-packages-v2 .tb-programmes-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 5px;
+    padding-bottom: 20px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    touch-action: pan-x pan-y;
+}
+
+.tb-packages-v2 .tb-programmes-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop: show 3 cards */
+.tb-packages-v2 .tb-programmes-track > [class*="col-"] {
+    flex: 0 0 33.333333% !important;
+    width: 33.333333% !important;
+    max-width: 33.333333% !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+/* Keep cards at equal height */
+.tb-packages-v2 .tb-package-card-v2 {
+    height: 100%;
+}
+
+/* Tablet: show 2 cards */
+@media (max-width: 991.98px) {
+    .tb-packages-v2 .tb-programmes-track > [class*="col-"] {
+        flex: 0 0 50% !important;
+        width: 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+/* Mobile: show 1 card */
+@media (max-width: 575.98px) {
+    .tb-packages-v2 .tb-programmes-track > [class*="col-"] {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tb-packages-v2 .tb-programmes-controls {
+        gap: 14px;
+        margin-bottom: 18px;
+    }
+
+    .tb-packages-v2 .tb-programmes-arrow {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .tb-packages-v2 .tb-programmes-counter {
+        font-size: 14px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .tb-packages-v2 .tb-programmes-track {
+        scroll-behavior: auto;
+    }
+
+    .tb-packages-v2 .tb-programmes-arrow {
+        transition: none;
+    }
+}
+
+/* ==========================================
+   BRAINY BLOOMS FOOTER
+   BROWN + CRIMSON GRADIENT
+   COMPACT RESPONSIVE DESIGN
+========================================== */
+
+.bb-footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    background: linear-gradient(115deg, #57251f 0%, #84202b 48%, #b5122a 100%);
+    font-size: 17px;
+}
+
+.bb-footer,
+.bb-footer * {
+    box-sizing: border-box;
+}
+
+.bb-footer p,
+.bb-footer h3,
+.bb-footer h4,
+.bb-footer ul {
+    margin-top: 0;
+}
+
+.bb-footer p,
+.bb-footer h3,
+.bb-footer h4,
+.bb-footer li,
+.bb-footer a,
+.bb-footer span {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.bb-footer p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.bb-footer a {
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.bb-footer-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 22px 0;
+}
+
+/* MAIN GRID */
+
+.bb-footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.75fr 1.1fr 1fr;
+    gap: 25px;
+    align-items: start;
+    padding-bottom: 24px;
+}
+
+.bb-footer-column {
+    width: 100%;
+    min-width: 0;
+}
+
+/* SCHOOL LOGO AND INTRODUCTION */
+
+.bb-footer-logo {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.bb-footer-logo img {
+    display: block;
+    width: auto;
+    max-width: 165px;
+    max-height: 72px;
+    object-fit: contain;
+}
+
+.bb-footer-heading {
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.bb-footer-description {
+    margin-bottom: 16px;
+    text-align: justify;
+    line-height: 1.65;
+}
+
+/* SECTION HEADINGS */
+
+.bb-footer-title {
+    position: relative;
+    display: table;
+    max-width: 100%;
+    margin-bottom: 17px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.bb-footer-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background: #ffffff;
+}
+
+/* SOCIAL ICONS */
+
+.bb-footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.bb-footer .bb-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+.bb-footer .bb-social-link i {
+    font-size: 17px;
+}
+
+.bb-footer .bb-social-link:hover {
+    color: #7b1e29;
+    background: #ffffff;
+}
+
+.bb-footer .bb-social-link:hover i {
+    color: #7b1e29;
+}
+
+/* QUICK LINKS */
+
+.bb-footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bb-footer-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.bb-footer .bb-footer-links a {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.bb-footer-links a i {
+    flex: 0 0 auto;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.bb-footer .bb-footer-links a:hover,
+.bb-footer .bb-contact-item a:hover,
+.bb-footer .bb-map-link:hover {
+    color: #ffe0d7;
+    text-decoration: underline;
+}
+
+/* CONTACT DETAILS */
+
+.bb-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bb-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    min-width: 0;
+}
+
+.bb-contact-item > i {
+    flex: 0 0 19px;
+    width: 19px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.bb-contact-item p {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* GOOGLE MAP */
+
+.bb-footer-map {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.bb-footer-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.bb-footer .bb-map-link {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* COPYRIGHT ROW */
+
+.bb-footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.bb-footer .bb-copyright {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.bb-designed-by {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    gap: 8px;
+}
+
+.bb-designed-by span {
+    white-space: nowrap;
+}
+
+.bb-designed-by a {
+    display: inline-flex;
+    align-items: center;
+    max-width: 120px;
+}
+
+.bb-designed-by img {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    max-height: 38px;
+    object-fit: contain;
+}
+
+/* SCROLL TO TOP */
+
+.bb-footer .bb-scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    padding: 0;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background: #ffffff;
+    color: #84202b;
+    cursor: pointer;
+}
+
+.bb-footer .bb-scroll-top i {
+    color: #84202b;
+    font-size: 17px;
+}
+
+.bb-footer .bb-scroll-top:hover {
+    background: #57251f;
+}
+
+.bb-footer .bb-scroll-top:hover i {
+    color: #ffffff;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1050px) {
+    .bb-footer-container {
+        padding: 28px 20px 0;
+    }
+
+    .bb-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 22px;
+    }
+
+    .bb-footer-map {
+        height: 190px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+    .bb-footer-container {
+        padding: 24px 16px 0;
+    }
+
+    .bb-footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        padding-bottom: 20px;
+    }
+
+    .bb-footer-column {
+        min-width: 0;
+    }
+
+    .bb-footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .bb-footer-logo img {
+        max-width: 150px;
+        max-height: 65px;
+    }
+
+    .bb-footer-heading {
+        margin-bottom: 9px;
+    }
+
+    .bb-footer-description {
+        margin-bottom: 13px;
+    }
+
+    .bb-footer-title {
+        margin-bottom: 13px;
+    }
+
+    .bb-footer-links {
+        gap: 8px;
+    }
+
+    .bb-contact-list {
+        gap: 10px;
+    }
+
+    .bb-footer-map {
+        height: 190px;
+    }
+
+    /* Keep all footer text at 17px */
+    .bb-footer,
+    .bb-footer p,
+    .bb-footer h3,
+    .bb-footer h4,
+    .bb-footer li,
+    .bb-footer a,
+    .bb-footer span,
+    .bb-footer .bb-copyright {
+        font-size: 17px;
+    }
+
+    /* Stack bottom row to prevent overflow */
+    .bb-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 0 16px;
+    }
+
+    .bb-footer .bb-copyright {
+        width: 100%;
+        line-height: 1.55;
+    }
+
+    .bb-designed-by {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .bb-designed-by img {
+        width: 90px;
+        max-height: 34px;
+    }
+
+    .bb-footer .bb-scroll-top {
+        right: 10px;
+        bottom: 10px;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 360px) {
+    .bb-footer-container {
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+
+    .bb-footer-grid {
+        gap: 20px;
+    }
+
+    .bb-footer-map {
+        height: 175px;
+    }
+}
