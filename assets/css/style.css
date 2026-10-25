@@ -493,7 +493,7 @@ textarea.form-control {
 
 /* Pulsing Logo */
 .preloader-logo {
-  height: 45px;
+  height: 80px;
   position: relative;
   z-index: 2;
   animation: pulseLogo 2s ease-in-out infinite;
@@ -502,8 +502,8 @@ textarea.form-control {
 /* Dual Spinning Rings */
 .spinner-ring {
   position: absolute;
-  width: 130px;
-  height: 130px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: var(--accent);
@@ -6321,7 +6321,7 @@ textarea.form-control {
 /* Sub Image (Overlapping Guide Photo) */
 .tb-about-sub-img-wrap {
   position: absolute;
-  bottom: -15%;
+  bottom:0;
   right: 0;
   width: 55%;
   height: 295px;
@@ -8000,7 +8000,6 @@ textarea.form-control {
   overflow: hidden;
   aspect-ratio: 1 / 1;
   display: block !important;
-  box-shadow: 0 10px 30px rgba(0, 24, 83, 0.05);
   background-color: var(--primary);
 }
 

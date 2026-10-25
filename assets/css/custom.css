@@ -733,15 +733,15 @@
     width: 39px;
     height: 39px;
     padding: 0;
-    border: 1px solid #ffffff;
+    border: 1px solid #f7f7f7;
     border-radius: 3px;
-    background: #ffffff;
-    color: #84202b;
+    background:#6f0512;
+    color:white;
     cursor: pointer;
 }
 
 .bb-footer .bb-scroll-top i {
-    color: #84202b;
+    color: #ffffff;
     font-size: 17px;
 }
 
