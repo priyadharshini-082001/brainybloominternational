@@ -4126,16 +4126,11 @@ textarea.form-control {
   background: #ffffff !important;
   border: 1.5px solid rgba(226, 232, 240, 0.9) !important;
   border-radius: 24px !important;
-  box-shadow: 0 10px 30px -4px rgba(0, 24, 83, 0.08), 0 4px 12px rgba(0, 24, 83, 0.03) !important;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-}
-
-.advantage-card:hover {
   transform: translateY(-8px) !important;
-  box-shadow: 0 22px 50px -8px rgba(0, 24, 83, 0.16) !important;
   border-color: rgba(226, 232, 240, 0.6) !important;
 }
 
@@ -4189,23 +4184,19 @@ textarea.form-control {
   user-select: none;
 }
 
-.advantage-card:hover .advantage-number {
-  transform: scale(1.08) translate(-6px, 4px);
-}
-
-.advantage-card.card-theme-teal:hover .advantage-number {
+.advantage-card.card-theme-teal .advantage-number {
   color: rgba(0, 158, 169, 0.16);
 }
 
-.advantage-card.card-theme-accent:hover .advantage-number {
+.advantage-card.card-theme-accent .advantage-number {
   color: rgba(255, 107, 0, 0.16);
 }
 
-.advantage-card.card-theme-navy:hover .advantage-number {
+.advantage-card.card-theme-navy .advantage-number {
   color: rgba(0, 24, 83, 0.14);
 }
 
-.advantage-card.card-theme-amber:hover .advantage-number {
+.advantage-card.card-theme-amber .advantage-number {
   color: rgba(217, 119, 6, 0.16);
 }
 
@@ -4242,23 +4233,18 @@ textarea.form-control {
   color: #d97706;
 }
 
-/* Hover State on Icon Pods */
-.advantage-card:hover .advantage-icon {
-  transform: scale(1.08) rotate(8deg);
-  box-shadow: 0 8px 20px rgba(0, 24, 83, 0.18);
-}
 
-.advantage-card:hover .advantage-icon.icon-teal {
+.advantage-card .advantage-icon.icon-teal {
   background: var(--secondary) !important;
   color: #ffffff !important;
 }
 
-.advantage-card:hover .advantage-icon.icon-accent {
+.advantage-card .advantage-icon.icon-accent {
   background: var(--accent) !important;
   color: #ffffff !important;
 }
 
-.advantage-card:hover .advantage-icon.icon-navy {
+.advantage-card .advantage-icon.icon-navy {
   background: var(--primary) !important;
   color: #ffffff !important;
 }
